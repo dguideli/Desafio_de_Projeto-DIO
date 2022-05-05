@@ -1,0 +1,6 @@
+import math
+num = float(input('Digite um ângulo: '))
+sen = math.sin(math.radians(num))
+cos = math.cos(math.radians(num))
+tan = math.tan(math.radians(num))
+print('O ângulo digitado foi o {} \nSeu seno é: {:.2f} \nSeu Cosseno é: {:.2f} \nSua tangente é: {:.2}'.format(num, sen, cos, tan))

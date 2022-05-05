@@ -1,0 +1,19 @@
+kwh = int(input('Digite o consumo em kWh: '))
+print('R - Residência \nI - Indústria \nC - Comércio')
+tipo = input('Digite o tipo de instalação: ')
+
+if tipo == 'R':
+    if kwh < 500:
+        print('Valor da fatura: R$ {:.2f}'.format(kwh * 0.40))
+    else:
+        print('Valor da fatura: R$ {:.2f}'.format(kwh * 0.65))
+elif tipo == 'I':
+    if kwh < 5000:
+        print('Valor da fatura: R$ {:.2f}'.format(kwh * 0.55))
+    else:
+        print('Valor da fatuar: R$ {:.2f}'.format(kwh * 0.60))
+elif tipo == 'C':
+    if kwh < 1000:
+        print('Valor da fatura: R$ {:.2f}'.format(kwh * 0.55))
+    else:
+        print('Valor da fatura: R$ {:.2f}'.format(kwh * 0.60))

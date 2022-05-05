@@ -1,0 +1,16 @@
+total = float(input('Valor total da compra: R$ '))
+print('\n1 - Pagamento à vista \n2 - Pagamento em 3x \n3 - Pagamento em 5x \n4 - Pagamento em 10x')
+fp = int(input('\nForma de pagamento: '))
+if fp == 1:
+    print('Valor total com 5% de desconto: R$ {:.2f}'.format(total*0.95))
+elif fp == 2:
+    print('Valor total em 3x (sem alteração): R$ {:.2f}'.format(total))
+    print('===> 3 parcelas de R$ {:.2f}'.format(total/3))
+elif fp == 3:
+    print('Valor total em 5x com 2% de acréscimo: R$ {:.2f}'.format(total*1.02))
+    print('===> 5 parcelas de R$ {:.2f}'.format((total*1.02)/5))
+elif fp == 4:
+    print('Valor total em 10x com 8% de acréscimo: R$ {:.2f}'.format(total*1.08))
+    print('===> 10 parcelas de R$ {:.2f}'.format((total*1.08)/10))
+else:
+    print('\nOpção inválida, tente novamente.')
